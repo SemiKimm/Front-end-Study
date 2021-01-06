@@ -1,0 +1,64 @@
+* {
+  /*초기화*/
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex; /*flex 속성 강좌 들어보기
+      이 속성 사용안하면 정렬이나 layout잡는데 어려움 있을수 있다. + grid 속성도 반드시 알아두면 좋다*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  background: #1f3c94;
+  color: #fff;
+  text-align: center; /*글자 가운데 정렬*/
+  padding: 1rem; /*패딩 각각 16픽셀씩 지정*/
+}
+
+.word-display {
+  margin-top: 3rem;
+  font-size: 80px;
+  color: #1f3c94;
+}
+
+.word-input-box {
+  margin-top: 2rem;
+}
+
+.word-input {
+  padding: 0.5rem;
+  width: 300px;
+}
+
+.game-info {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.time,
+.score {
+  font-size: 30px;
+}
+
+.button {
+  width: 200px;
+  height: 35px;
+  background: #1f3c94;
+  color: #fff;
+  border: none;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+.loading {
+  background: #ccc;
+  cursor: not-allowed;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-width, initial-scale-1.0" />
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!--rel을 줘야지 css가 적용된다-->
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>타이핑마스터!</h1>
+    </div>
+
+    <!--랜덤으로 표시할 단어를 위치시킬 부분-->
+    <div class="word-display">Hello</div>
+
+    <!--input 창-->
+    <div class="word-input-box">
+      <input type="text" class="word-input" />
+    </div>
+
+    <div class="game-info">
+      <div>남은시간: <span class="time">0</span>초</div>
+      <div>획득점수: <span class="score">0</span>점</div>
+    </div>
+    <button class="button loading" onclick="run()">게임을 불러오는중...</button>
+  </body>
+</html>

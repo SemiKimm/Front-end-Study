@@ -1,2 +1,3 @@
-# Front-end_Datapia
-Datapia 동아리에서 진행하는 프론트엔드 스터디
+# VanillaJS-typing-game
+영상(https://youtu.be/_CsGSE5gwTA)을 보며
+Vanilla JS로 만드는 타자 게임

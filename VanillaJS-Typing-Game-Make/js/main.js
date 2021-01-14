@@ -43,9 +43,10 @@ function checkStatus() {
     clearInterval(checkInterval);
   }
 }
-
+/*
 //단어 불러오기
 function getWords() {
+  //단어를 랜덤하게 제공하는 api사용
   axios
     .get('https://random-word-api.herokuapp.com/word?number=100')
     .then(function (response) {
@@ -62,7 +63,19 @@ function getWords() {
     });
   // words = ['Hello', 'Banana', 'Apple', 'Cherry'];
   //buttonChange('게임시작');
-}
+}*/
+
+async function getWords() {
+  let response = await axios.get(
+    'https://random-word-api.herokuapp.com/word?number=100'
+  );
+  response.data.forEach((word) => {
+    if (word.length < 10) {
+      words.push(word);
+    }
+  });
+  buttonChange('게임시작');
+} //try catch로 await async에선 오류 제어해줘야된다. >> 함수 실행하는 곳에서 try catch 해야됨
 
 //단어 일치 체크
 function checkMatch() {

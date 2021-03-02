@@ -1,0 +1,31 @@
+.App {
+  display: flex;
+  flex-direction: column; /*세로정렬*/
+}
+.header {
+  padding: 1rem 2rem; /*양옆 간격 설정*/
+  background: #3b5998;
+  display: flex; /*가로 일렬로 정렬*/
+  justify-content: space-between; /*양쪽 가로 각각 붙도록 정렬*/
+  align-items: center;
+}
+
+.header h1 {
+  color: #fff;
+}
+.header select {
+  height: 30px;
+  width: 140px;
+  border-radius: 5px;
+  border: none;
+}
+
+section {
+  padding: 1rem;
+}
+
+.contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
